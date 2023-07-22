@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body>
-
+<body data-bs-theme="Light">
     <!-- Nome e botão -->
     <nav class="bg-primary">
         <div class="container">
@@ -27,14 +26,28 @@
                 <!-- Botão dark mode -->
                 <div class="col-6 d-flex justify-content-end">
 
-                    <button class="btn ">
-                        <i class="fa-solid fa-sun"></i>
+                    <button class="btn">
+                        
+                        <div class="dropdown">
+                            <button class="btn bg-primary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-sun"></i>
+                              Dark Mode
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item active" href="#">
+                                <i class="fa-solid fa-moon"></i>
+                                Light
+                            </a></li>
+                            </ul>
+                          </div>
+                            
                     </button>
                 </div>
 
             </div>
         </div>
     </nav>
+    
     <!-- Mini bio e foto -->
     <header>
 
@@ -108,7 +121,7 @@
 
         </section>
         <!-- Projetos -->
-        <div class="p-5 bg-dark">
+        <div class="p-5 bg-body-secondary">
             <section>
                 <!-- 3 card , img, a -->
                 <div class="container">
@@ -205,8 +218,9 @@
 
 
         <!-- Direitos autorais -->
-        <section class="text-center p-3 ">
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Thiago Pezzi.</span>
+        <section class="text-center p-3 bg-dark-subtle">
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Thiago Pezzi.
+            </span>
         </section>
 
     </footer>
